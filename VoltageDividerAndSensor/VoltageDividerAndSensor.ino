@@ -1,6 +1,24 @@
 int outputPin = 13;
 int inputPin = A0;
 
+/*
+Circuit:
+
+ -> OUTPUT
+   -> 500 ohm resistor
+      -> INPUT
+      -> Sensor 
+        -> Ground
+   Input will be determined by the
+   resistanse of the sensor
+   v1 = 5v
+   r1 = 500ohm resistor
+   r2 = sensor
+  
+   the value we read:
+   v2 = (r2/r1+r2)*v1
+*/
+
 void setup() 
 {
   //We send a steady current from output to input
